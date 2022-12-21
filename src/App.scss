@@ -1,5 +1,5 @@
-@import './partials/reset';
+@import './partials/_reset' , './partials/variables';
 
 body{
-    background-color: white;
+    background-color: $black;
 }

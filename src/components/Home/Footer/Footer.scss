@@ -1,0 +1,17 @@
+@import '/src/partials/variables';
+
+.Footer{
+    width: 100%;
+    min-height: 20vh;
+    color: $white;
+    &-Wrapper{}
+    &-ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    &-li{}
+    &-a{}
+}

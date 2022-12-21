@@ -1,23 +1,38 @@
+@import '/src/partials/variables';
+
 .Header{
-    background-color: black;
+    background-color: transparent;
+    padding: 3em 5em;
+    position: fixed;
     width: 100%;
-    min-height: 20vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    &-logo{
-        background-color: lightcoral;
+    &-wrapper{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        // max-width: 1440px;
+        // margin: auto;
     }
-    &-img{}
+    &-logo{}
+    &-img{
+        width: 10em;
+    }
+    &-button{
+        display: none;
+    }
     &-nav{
-        background-color: lightgreen;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: white;
     }
     &-ul{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        gap: 1.5em;
     }
     &-li{}
     &-a{}
