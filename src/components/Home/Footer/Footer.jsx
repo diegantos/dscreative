@@ -6,20 +6,20 @@ export const Footer = () => {
             <div className="Footer-Wrapper Wrapper">
                 <ul className="Footer-ul">
                     <li className="Footer-li">
-                        <a href="#" className="Footer-a"><img src="https://img.icons8.com/sf-regular/48/null/instagram-new.png"/></a>
+                        <a href="https://www.instagram.com/diegantos/" className="Footer-a" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li className="Footer-li">
-                        <a href="#" className="Footer-a"><img src="https://img.icons8.com/sf-regular/48/null/vimeo.png"/></a>
+                        <a href="#" className="Footer-a"><i class="fa-brands fa-vimeo-v" target="_blank"></i></a>
                     </li>
                     <li className="Footer-li">
-                        <a href="#" className="Footer-a"><img src="https://img.icons8.com/sf-regular/48/null/youtube-play.png"/></a>
+                        <a href="https://www.youtube.com/@diegantos" className="Footer-a" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     </li>
                     <li className="Footer-li">
-                        <a href="#" className="Footer-a"><img src="https://img.icons8.com/sf-regular/48/null/linkedin.png"/></a>
+                        <a href="https://www.linkedin.com/in/diegantos/" className="Footer-a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </li>
                 </ul>
-                <div class="register flex jcenter">
-                    <p>diegantos 2022</p>
+                <div class="Footer-register">
+                    <p className=''>diegantos <i class="fa-regular fa-copyright"></i> 2023</p>
                 </div>
             </div>
         </div>
