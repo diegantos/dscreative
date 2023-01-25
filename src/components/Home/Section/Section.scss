@@ -1,0 +1,75 @@
+.Section{
+    .work{
+        background-color: $negro;
+        padding-top: $sizeL;
+        a{
+            position: relative;
+            &:hover{
+                .work__text{
+                    transform: scale(1.1);
+                }
+                .guion{
+                    transform: translateX(15%);
+                    width: 60px;
+                }
+            }
+        }
+        &__element{
+            width: 100%;
+            height: 35vh;
+            transition: 0.4s;
+            background-color: $negro;
+            opacity: 1;
+            &:hover{
+                opacity: 0.3;
+            }
+        }
+        &__text{
+            color: $blanco;
+            text-decoration: none;
+            text-transform: uppercase;
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            transition: 0.5s;
+            p{
+                font-size: 1.4rem;
+                margin-bottom: 6px;
+            }
+            h2{
+                width: 100%;
+                height: 100%;
+                font-size: 2.8rem;
+            }
+            .guion{
+                width: 100px;
+                height: 2px;
+                background-color: $blanco;
+                transform: translateX(50%);
+                transition: 0.5s;
+                margin-top: 8px;
+            }
+        }
+        &__video{
+            background-image: url(img/SOMIEDO/P1022369.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-bottom: $sizeL;
+        }
+        &__photo{
+            background-image: url(img/UBINAS/DJI_0027.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        @include corte(movil){
+            .work__text{
+                p{
+                    font-size: 1rem;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
