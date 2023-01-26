@@ -54,30 +54,27 @@
         transition: all 0.6s ease;
         &.line1{
             top: 25%;
+            transition-delay: 0.3s;
             &.Active{
-                transform: rotate(225deg);
+                transform: translateY(47%);
                 top: 47%;
             }
         }
         &.line2{
             top: calc(50% - 1.5px);
             &.Active{
-                transform: scaleX(0);
+                transform: rotate(90deg);
                 bottom: 47%;
+                transition-delay: 0.6s;
             }
         }
         &.line3{
             bottom: 25%;
+            transition-delay: 0.3s;
             &.Active{
-                transform: rotate(-225deg);
+                transform: translateY(47%);
                 bottom: 47%;
             }
-        }
-    }
-    &.Active{
-        backdrop-filter: opacity(20%);
-        .line1{
-            transform: rotate(225deg);
         }
     }
 }
