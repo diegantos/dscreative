@@ -5,18 +5,17 @@
     padding: 3em 5em;
     position: fixed;
     width: 100%;
+    z-index: 5;
     &-wrapper{
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        // max-width: 1440px;
-        // margin: auto;
     }
     &-logo{}
     &-img{
-        width: 10em;
+        width: 8em;
     }
     &-button{
         display: none;
@@ -25,7 +24,7 @@
         font-size: 1.5em;
         text-transform: uppercase;
         font-weight: 600;
-        color: white;
+        color: $white;
     }
     &-ul{
         display: flex;
@@ -34,6 +33,71 @@
         align-items: center;
         gap: 1.5em;
     }
-    &-li{}
+    &-li{
+        transition: all 0.3s ease;
+        &:hover{
+            color: $gray;
+        }
+    }
     &-a{}
+    &-button{
+        width: 2.5em;
+        height: 3em;
+        position: relative;
+    }
+    &-line{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: $white;
+        transition: all 0.6s ease;
+        &.line1{
+            top: 25%;
+            &.Active{
+                transform: rotate(225deg);
+                top: 47%;
+            }
+        }
+        &.line2{
+            top: calc(50% - 1.5px);
+            &.Active{
+                transform: scaleX(0);
+                bottom: 47%;
+            }
+        }
+        &.line3{
+            bottom: 25%;
+            &.Active{
+                transform: rotate(-225deg);
+                bottom: 47%;
+            }
+        }
+    }
+    &.Active{
+        backdrop-filter: opacity(20%);
+        .line1{
+            transform: rotate(225deg);
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .Header{
+        padding: 3em;
+        &-nav{
+            display: none;
+        }
+        &-button{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .Header{
+        padding: 2em;
+        &-img{
+            width: 5em;
+        }
+    }
 }
