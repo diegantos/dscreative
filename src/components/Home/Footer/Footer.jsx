@@ -9,7 +9,7 @@ export const Footer = () => {
                         <a href="https://www.instagram.com/diegantos/" className="Footer-a" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li className="Footer-li">
-                        <a href="#" className="Footer-a"><i class="fa-brands fa-vimeo-v" target="_blank"></i></a>
+                        <a href="https://vimeo.com/diegantos" className="Footer-a" target="_blank"><i class="fa-brands fa-vimeo-v"></i></a>
                     </li>
                     <li className="Footer-li">
                         <a href="https://www.youtube.com/@diegantos" className="Footer-a" target="_blank"><i class="fa-brands fa-youtube"></i></a>
