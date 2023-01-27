@@ -4,10 +4,18 @@ import './Header.scss'
 export const Header = () => {
 
     const [show, setShow] = useState(false)
+    const [scrollTop , setScrollTop] = useState(0)
+
+    const handleScroll = event => {
+        setScrollTop(event.currentTarget.scrollTop)
+    }
 
     return(
-        <div className="Header">
-            <div className="Header-wrapper Wrapper">
+        <div
+            onScroll={ handleScroll } 
+            className="Header">
+            <div className={`Header-wrapper Wrapper ${ (scrollTop>=20) ? 'Active' : ''}`}>
+            {/* <div className="Header-wrapper Wrapper"> */}
                 <a href="#" className="Header-logo">
                     <img src="/assets/DSWhite.png" alt="Logo" className="Header-img" />
                 </a>
@@ -33,6 +41,10 @@ export const Header = () => {
                         </li>
                     </ul>
                 </nav>
+            </div>
+
+            <div className="Header-menu">
+
             </div>
         </div>
     )
