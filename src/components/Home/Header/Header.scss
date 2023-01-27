@@ -54,26 +54,26 @@
         transition: all 0.6s ease;
         &.line1{
             top: 25%;
-            transition-delay: 0.3s;
+            transition-delay: 0.2s;
             &.Active{
                 transform: translateY(47%);
-                top: 47%;
+                top: calc(50% - 1.5px);
             }
         }
         &.line2{
             top: calc(50% - 1.5px);
             &.Active{
                 transform: rotate(90deg);
-                bottom: 47%;
-                transition-delay: 0.6s;
+                bottom: calc(50% - 1.5px);
+                transition-delay: 0.5s;
             }
         }
         &.line3{
             bottom: 25%;
-            transition-delay: 0.3s;
+            transition-delay: 0.2s;
             &.Active{
                 transform: translateY(47%);
-                bottom: 47%;
+                bottom: calc(50% - 1.5px);
             }
         }
     }
@@ -90,7 +90,7 @@
         }
     }
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:520px) {
     .Header{
         padding: 2em;
         &-img{
