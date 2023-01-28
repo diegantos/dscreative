@@ -43,9 +43,9 @@ export const Header = () => {
                 </nav>
             </div>
 
-            {/* <div className={`Menu ${ show ? 'Active' : '' }`}>
+            <div className={`Menu ${ show ? 'Active' : '' }`}>
                 <a href="#" className="Menu-a"></a>
-            </div> */}
+            </div>
         </div>
     )
 }
