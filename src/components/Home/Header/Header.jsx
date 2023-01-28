@@ -13,15 +13,15 @@ export const Header = () => {
     return(
         <div
             onScroll={ handleScroll } 
-            className="Header">
-            <div className={`Header-wrapper Wrapper ${ (scrollTop>=20) ? 'Active' : ''}`}>
-            {/* <div className="Header-wrapper Wrapper"> */}
+            className={`Header ${ {scrollTop} >= 20 ? 'Active' : ''}`}>
+            {/* className="Header"> */}
+            <div className="Header-wrapper Wrapper">
                 <a href="#" className="Header-logo">
                     <img src="/assets/DSWhite.png" alt="Logo" className="Header-img" />
                 </a>
 
                 <button 
-                    onClick={ ()=> setShow(!show) } 
+                    onClick={ ()=> setShow(!show) }
                     className='Header-button'>
                     <div className={`Header-line line1 ${ show ? 'Active' : ''}`}></div>
                     <div className={`Header-line line2 ${ show ? 'Active' : ''}`}></div>
