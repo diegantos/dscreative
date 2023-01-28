@@ -4,6 +4,8 @@
     background-color: transparent;
     padding: 3em 5em;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 5;
     &-wrapper{
@@ -76,10 +78,41 @@
         }
     }
     &.Active{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        // pointer-events: none;
+        transition: all 0.5s ease;
         background-color: $black;
-        padding: 1.5em 5em;
+        z-index: 3;
+        &.Active{
+            opacity: 1;
+            transition: all 0.5s ease;
+            // .Header-nav{
+            //     display: flex;
+            // }
+        }
     }
 }
+
+// .Menu{
+//     position: fixed;
+//     width: 100vw;
+//     height: 100vh;
+//     top: 0;
+//     left: 0;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: all 0.5s ease;
+//     background-color: $black;
+//     z-index: 3;
+//     &.Active{
+//         opacity: 1;
+//     }
+// }
 
 @media screen and (max-width:800px) {
     .Header{

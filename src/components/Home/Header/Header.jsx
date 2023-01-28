@@ -13,7 +13,7 @@ export const Header = () => {
     return(
         <div
             onScroll={ handleScroll } 
-            className={`Header ${ {scrollTop} >= 20 ? 'Active' : ''}`}>
+            className={`Header ${ show ? 'Active' : '' }`}>
             {/* className="Header"> */}
             <div className="Header-wrapper Wrapper">
                 <a href="#" className="Header-logo">
@@ -43,9 +43,9 @@ export const Header = () => {
                 </nav>
             </div>
 
-            <div className="Header-menu">
-
-            </div>
+            {/* <div className={`Menu ${ show ? 'Active' : '' }`}>
+                <a href="#" className="Menu-a"></a>
+            </div> */}
         </div>
     )
 }
