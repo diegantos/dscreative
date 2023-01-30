@@ -1,5 +1,43 @@
 @import '/src/partials/variables';
-
 .Intro{
-    min-height: 150vh;
+    // min-height: 150vh;
+    &-video{
+        min-height: 90vh;
+    }
+    &-works{}
+    &-a{
+        transition: all 0.4s ease;
+        &:hover{
+            opacity: 0.3;
+        }
+    }
+    &-element{
+        width: 100%;
+        min-height: 35vh;
+        position: relative;
+        background-color: $black;
+        opacity: 1;
+    }
+    &-elementVideo{
+        background-image: url(/public/assets/SOMIEDO/P1022369.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 0 3em 0;
+    }
+    &-text{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        color: $white;
+        &::after{
+            position: absolute;
+            width: 6em;
+            height: 0.2em;
+            bottom: 0;
+            left: 0;
+            background-color: $white;
+        }
+    }
+    &-p{}
+    &-h2{}
 }
