@@ -10,7 +10,7 @@ export const Intro = () => {
                     <span>play showreel</span>
                 </a>
             </div> */}
-            <Btn />
+            <Btn url='https://diegantos.com'>Play Showreel</Btn>
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
                     <div className="Intro-element Intro-elementVideo"></div>
@@ -24,7 +24,7 @@ export const Intro = () => {
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
                     {/* <div className="Intro-element Intro-elementPhoto"></div> */}
-                    <TextEffect />
+                    <TextEffect  />
                     <div className="Intro-text">
                         <p className="Intro-p">from nature to festivals</p>
                         <h2 className="Intro-h2">photography</h2>

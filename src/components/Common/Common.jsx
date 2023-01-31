@@ -1,10 +1,14 @@
 import './Common.scss'
 
-export const Btn = ({ children, clase }) => {
+export const Btn = ({ children, clase, url }) => {
     return(
-        <button 
+        <a
+            href={ url }
+            target='_blank'
             className={`Btn ${ clase }`}
-            title='Play Showreel'>{ children }</button>
+            title='Play Showreel'>
+            <span className='Btn-span'>{ children }</span>    
+        </a>
     )
 }
 
