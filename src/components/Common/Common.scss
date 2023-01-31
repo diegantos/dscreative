@@ -37,3 +37,52 @@
         transition: all 0.3s ease;
     }
 }
+
+.Intro{
+    &-element{
+        width: 100%;
+        min-height: 35vh;
+        background-color: $black;
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
+    &-elementVideo{
+        background-image: url(/public/assets/SOMIEDO/P1022369.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 0 3em 0;
+    }
+    &-elementPhoto{
+        background-image: url(/public/assets/UBINAS/DJI_0027.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 0 3em 0;
+    }
+    &-text{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        color: $white;
+        text-transform: uppercase;
+        transition: all 0.4s ease;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 7em;
+            height: 2px;
+            bottom: -10%;
+            left: 0;
+            background-color: $white;
+            transform: translateX(40%);
+            transition: all 0.4s ease;
+        }
+    }
+    &-p{
+        font-size: 1em;
+    }
+    &-h2{
+        font-size: 2em;
+        font-weight: 800;
+        transition: all 0.4s ease;
+    }
+}
