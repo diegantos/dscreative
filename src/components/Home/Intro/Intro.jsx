@@ -17,13 +17,16 @@ export const Intro = () => {
                         <h2 className="Intro-h2">videography</h2>
                     </div>
                 </a>
-                {/* <a href="#" className="Intro-a">
-                    <div className="Intro-element"></div>
+            </div>
+            
+            <div className="Intro-works">
+                <a href="#" className="Intro-a">
+                    <div className="Intro-element Intro-elementPhoto"></div>
                     <div className="Intro-text">
                         <p className="Intro-p">from nature to festivals</p>
                         <h2 className="Intro-h2">photography</h2>
                     </div>
-                </a> */}
+                </a>
             </div>
         </div>
         

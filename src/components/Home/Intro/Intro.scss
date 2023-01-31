@@ -1,8 +1,8 @@
 @import '/src/partials/variables';
 .Intro{
-    // min-height: 150vh;
     &-video{
         min-height: 90vh;
+        margin: 0 0 3em;
     }
     &-works{}
     &-a{
@@ -13,6 +13,13 @@
             }
             .Intro-text{
                 transform: scale(1.1);
+                &::after{
+                    width: 5em;
+                    transform: translateX(10%);
+                }
+            }
+            .Intro-h2{
+                letter-spacing: 0.15em;
             }
         }
     }
@@ -29,6 +36,12 @@
         background-position: center;
         margin: 0 0 3em 0;
     }
+    &-elementPhoto{
+        background-image: url(/public/assets/UBINAS/DJI_0027.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 0 3em 0;
+    }
     &-text{
         position: absolute;
         top: 30%;
@@ -36,12 +49,16 @@
         color: $white;
         text-transform: uppercase;
         transition: all 0.4s ease;
-        &::before{
-            width: 100px;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 7em;
             height: 2px;
-            top: 0;
+            bottom: -10%;
             left: 0;
             background-color: $white;
+            transform: translateX(40%);
+            transition: all 0.4s ease;
         }
     }
     &-p{
@@ -50,5 +67,6 @@
     &-h2{
         font-size: 2em;
         font-weight: 800;
+        transition: all 0.4s ease;
     }
 }
