@@ -1,4 +1,5 @@
 @import '/src/partials/variables';
+
 .Intro{
     &-video{
         min-height: 90vh;
@@ -45,7 +46,7 @@
     &-text{
         position: absolute;
         top: 30%;
-        left: 20%;
+        left: 25%;
         color: $white;
         text-transform: uppercase;
         transition: all 0.4s ease;
@@ -68,5 +69,20 @@
         font-size: 2em;
         font-weight: 800;
         transition: all 0.4s ease;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .Intro{
+        &-text{
+            top: 35%;
+            left: 20%;
+        }
+        &-p{
+            font-size: 0.7em;
+        }
+        &-h2{
+            font-size: 1.5em;
+        }
     }
 }
