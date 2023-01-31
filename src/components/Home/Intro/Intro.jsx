@@ -13,7 +13,7 @@ export const Intro = () => {
                 <a href="#" className="Intro-a">
                     <div className="Intro-element Intro-elementVideo"></div>
                     <div className="Intro-text">
-                        <p className="Intro-p">creatrive filmmaking</p>
+                        <p className="Intro-p">creatrive filmmaking / brand work</p>
                         <h2 className="Intro-h2">videography</h2>
                     </div>
                 </a>
