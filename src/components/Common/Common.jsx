@@ -8,7 +8,7 @@ export const Btn = ({ children, clase }) => {
     )
 }
 
-export const Type = ({ children, clase }) => {
+export const BackgroundElement = ({ children, clase }) => {
     return(
         <div className="Intro-works">
         <a href="#" className="Intro-a">
@@ -19,5 +19,11 @@ export const Type = ({ children, clase }) => {
             </div>
         </a>
     </div>
+    )
+}
+
+export const TextEffect = ({ clase }) => {
+    return(
+        <div className={`Intro-element ${ clase }`}></div>
     )
 }

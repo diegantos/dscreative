@@ -1,3 +1,4 @@
+import { Btn, TextEffect } from '../../Common/Common'
 import './Intro.scss'
 
 export const Intro = () => {
@@ -9,6 +10,7 @@ export const Intro = () => {
                     <span>play showreel</span>
                 </a>
             </div> */}
+            <Btn />
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
                     <div className="Intro-element Intro-elementVideo"></div>
@@ -21,7 +23,8 @@ export const Intro = () => {
             
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
-                    <div className="Intro-element Intro-elementPhoto"></div>
+                    {/* <div className="Intro-element Intro-elementPhoto"></div> */}
+                    <TextEffect />
                     <div className="Intro-text">
                         <p className="Intro-p">from nature to festivals</p>
                         <h2 className="Intro-h2">photography</h2>
