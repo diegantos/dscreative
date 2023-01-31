@@ -1,16 +1,13 @@
-import { Btn, TextEffect } from '../../Common/Common'
+import { BackgroundElement, Btn, TextEffect } from '../../Common/Common'
 import './Intro.scss'
 
 export const Intro = () => {
     return(
         <div className="Intro">
-            <video className="Intro-video" autoPlay muted loop src="/assets/Intro.mp4"></video>
-            {/* <div class="intro__text">
-                <a href="#" class="btn">
-                    <span>play showreel</span>
-                </a>
-            </div> */}
-            <Btn url='https://diegantos.com'>Play Showreel</Btn>
+            <div className="Intro-vid">
+                <video className="Intro-video" autoPlay muted loop src="/assets/Intro.mp4"></video>
+                <Btn url='https://diegantos.com' clase='Intro-btn'>Play Showreel</Btn>
+            </div>
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
                     <div className="Intro-element Intro-elementVideo"></div>
@@ -24,11 +21,12 @@ export const Intro = () => {
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
                     {/* <div className="Intro-element Intro-elementPhoto"></div> */}
+                    <BackgroundElement></BackgroundElement>
                     <TextEffect  />
-                    <div className="Intro-text">
+                    {/* <div className="Intro-text">
                         <p className="Intro-p">from nature to festivals</p>
                         <h2 className="Intro-h2">photography</h2>
-                    </div>
+                    </div> */}
                 </a>
             </div>
         </div>

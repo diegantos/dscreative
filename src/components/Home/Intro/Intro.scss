@@ -1,9 +1,17 @@
 @import '/src/partials/variables';
 
 .Intro{
+    &-vid{
+        position: relative;
+    }
     &-video{
         min-height: 90vh;
         margin: 0 0 3em;
+    }
+    &-btn{
+        position: absolute;
+        top: calc( 50% - 22.5px );
+        left: calc( 50% - 100px );
     }
     &-works{}
     &-a{
