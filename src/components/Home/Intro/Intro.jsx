@@ -22,11 +22,9 @@ export const Intro = () => {
                 <a href="#" className="Intro-a">
                     {/* <div className="Intro-element Intro-elementPhoto"></div> */}
                     <BackgroundElement></BackgroundElement>
-                    <TextEffect  />
-                    {/* <div className="Intro-text">
-                        <p className="Intro-p">from nature to festivals</p>
-                        <h2 className="Intro-h2">photography</h2>
-                    </div> */}
+                    <TextEffect 
+                        parrafo='from nature to festivals'
+                        titulo='photography'></TextEffect>
                 </a>
             </div>
         </div>
