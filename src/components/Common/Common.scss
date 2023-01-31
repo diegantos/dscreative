@@ -1,0 +1,30 @@
+@import '/src/partials/variables';
+
+.Btn{
+    display: inline-block;
+    background-color: $gray;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 2.2em;
+    position: relative;
+    border-radius: 5px;
+    &:hover{
+        &::after{
+
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        background-color: $blue;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease;
+    }
+}
