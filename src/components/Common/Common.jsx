@@ -17,8 +17,7 @@ export const BackgroundElement = ({ clase , url }) => {
         <div 
             className={`Intro-element ${clase}`}
             style={{
-                backgroundImage : `url(${url})`
-            }}></div>
+                backgroundImage : `url(${url})` }}></div>
     )
 }
 
