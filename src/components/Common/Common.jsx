@@ -12,9 +12,13 @@ export const Btn = ({ children, clase, url }) => {
     )
 }
 
-export const BackgroundElement = ({ children, clase }) => {
+export const BackgroundElement = ({ clase , url }) => {
     return(
-        <div className="Intro-element Intro-elementPhoto"></div>
+        <div 
+            className={`Intro-element ${clase}`}
+            style={{
+                backgroundImage : `url(${url})`
+            }}></div>
     )
 }
 

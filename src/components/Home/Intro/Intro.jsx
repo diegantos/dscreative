@@ -21,7 +21,7 @@ export const Intro = () => {
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
                     {/* <div className="Intro-element Intro-elementPhoto"></div> */}
-                    <BackgroundElement></BackgroundElement>
+                    <BackgroundElement url='/public/assets/UBINAS/DJI_0027.jpg'></BackgroundElement>
                     <TextEffect 
                         parrafo='from nature to festivals'
                         titulo='photography'></TextEffect>
