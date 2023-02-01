@@ -1,4 +1,5 @@
 import './App.scss'
+import { Contact } from './components/Contact/Contact'
 import { Home } from './components/Home/Home'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
     <div className="App">
 
-      <Home />
+      {/* <Home /> */}
+      <Contact />
     
     </div>
   )
