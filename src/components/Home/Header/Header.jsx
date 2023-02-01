@@ -1,19 +1,26 @@
+import { useEffect } from 'react'
 import { useState } from 'react'
 import './Header.scss'
 
 export const Header = () => {
 
     const [show, setShow] = useState(false)
-    const [scrollTop , setScrollTop] = useState(0)
+    const [scrollTop , setScrollTop] = useState('')
 
-    const handleScroll = event => {
-        setScrollTop(event.currentTarget.scrollTop)
+    const handleScroll = () => {
+        (window.scrollY > 100) ? setScrollTop(true) : setScrollTop(false)
     }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    },[])
 
     return(
         <div
-            onScroll={ handleScroll } 
-            className={`Header ${ show ? 'Active' : '' }`}>
+            className={`Header ${ show ? 'Active' : '' } ${ scrollTop ? 'Scrolled' : ''}`}>
 
             <div className="Header-wrapper Wrapper">
                 <a href="#" className="Header-logo">
