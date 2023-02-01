@@ -1,2 +1,15 @@
 @import '/src/partials/variables';
 
+.About{
+    min-height: 100vh;
+    color: $white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    &-info{
+        font-size: 4.2em;
+        font-weight: 800;
+    }
+    &-p{}
+}
