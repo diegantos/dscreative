@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
     &-wrapper{
         width: 100%;
         display: flex;
@@ -16,7 +16,7 @@
         align-items: center;
     }
     &-logo{
-        z-index: 5;
+        z-index: 10;
     }
     &-img{
         width: 8em;
@@ -92,23 +92,6 @@
         z-index: 5;
     }
 }
-
-// .Menu{
-//     position: fixed;
-//     width: 100vw;
-//     height: 100vh;
-//     top: 0;
-//     left: 0;
-//     opacity: 0;
-//     pointer-events: none;
-//     transition: all 0.5s ease;
-//     background-color: $black;
-//     z-index: 3;
-//     &.Active{
-//         opacity: 1;
-//         pointer-events: all;
-//     }
-// }
 
 @media screen and (max-width:800px) {
     .Header{

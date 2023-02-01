@@ -14,7 +14,7 @@ export const Header = () => {
         <div
             onScroll={ handleScroll } 
             className={`Header ${ show ? 'Active' : '' }`}>
-            {/* className="Header"> */}
+
             <div className="Header-wrapper Wrapper">
                 <a href="#" className="Header-logo">
                     <img src="/assets/DSWhite.png" alt="Logo" className="Header-img" />
@@ -43,9 +43,6 @@ export const Header = () => {
                 </nav>
             </div>
 
-            {/* <div className={`Menu ${ show ? 'Active' : '' }`}>
-                <a href="#" className="Menu-a"></a>
-            </div> */}
         </div>
     )
 }
