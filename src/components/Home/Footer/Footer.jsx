@@ -19,7 +19,7 @@ export const Footer = () => {
                     </li>
                 </ul>
                 <div class="Footer-register">
-                    <p className=''>diegantos <i class="fa-regular fa-copyright"></i> 2023</p>
+                    <p className=''>diegantos <i className="fa-regular fa-copyright"></i> 2023</p>
                 </div>
             </div>
         </div>
