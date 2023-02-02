@@ -2,6 +2,7 @@
 
 .About-background{
     margin-top: 11em;
+    background-attachment: fixed;
 }
 
 .About{
@@ -47,5 +48,48 @@
                 transform: scaleX(1);
             }
         }
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .About{
+        padding: 2em 10em;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .About{
+        flex-direction: column-reverse;
+        padding: 2em 10em;
+        &-contact{
+            margin: 1em 0 2em;
+        }
+        &-info{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .About{
+        padding: 2em 7em;
+        &-info{
+            font-size: 1.8em;
+        }
+    }
+}
+
+@media screen and (max-width:620px) {
+    .About{
+        padding: 2em 5em;
+        &-info{
+            // font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .About{
+        padding: 2em;
     }
 }
