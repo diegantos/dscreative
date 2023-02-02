@@ -1,7 +1,13 @@
 import './About.scss';
+import { BackgroundElement } from "../../Common/Common"
 
 export const About = () => {
     return(
+        <>
+        <BackgroundElement 
+            url='/assets/PICOS/P1021096.jpg'
+            clase='About-background' />
+
         <div className="About Wrapper">
             <div className="About-info">
                 <p className="About-p">Diego Santos is a photographer and filmmaker based between León and his hometown in Asturias, in north Spain.</p>
@@ -12,5 +18,6 @@ export const About = () => {
                 <a href="mailto:info@diegantos.com?subject=Hello%20there!" className="About-mail">info@diegantos.com</a>
             </div>
         </div>
+        </>
     )
 }

@@ -31,6 +31,9 @@
                 letter-spacing: 0.15em;
             }
         }
+        &:first-child{
+            margin-bottom: 3em;
+        }
     }
 }
 
