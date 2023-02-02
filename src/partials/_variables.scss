@@ -1,5 +1,6 @@
 
-$black: #1c1c1c;
+// $black: #1c1c1c;
+$black: #100e15;
 $gray: #444444;
 $white: #EDEDED;
 $blue: #00a7ac;
@@ -7,4 +8,9 @@ $blue: #00a7ac;
 .Wrapper{
     max-width: 1440px;
     margin: auto;
+}
+
+body{
+    background-color: #100e15;
+    color: $white;
 }
