@@ -15,7 +15,7 @@ export const Photo = () => {
     ]
 
     return(
-        <div className="Photo Wrapper">
+        <div className="Photo">
             <div className="Photo-grid">
                 {grid.map( ({ id , src , alt }) => 
                     <img key={ id } src={ src } alt={ alt } loading="lazy" />
