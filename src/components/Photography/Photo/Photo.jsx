@@ -3,7 +3,7 @@ import './Photo.scss';
 export const Photo = () => {
 
     const grid = [
-        { id : 0 , src : '/assets/UBINAS/DJI_0011.jpg' , alt : 'Img' , big : 'Big'},
+        { id : 0 , src : '/assets/img/P1052054.jpg' , alt : 'Img' , big : 'Big'},
         { id : 1 , src : '/assets/UBINAS/DJI_0005.jpg' , alt : 'Img' , big : ''},
         { id : 2 , src : '/assets/UBINAS/DJI_0021.jpg' , alt : 'Img' , big : ''},
         { id : 3 , src : '/assets/UBINAS/DJI_0025.jpg' , alt : 'Img' , big : ''},
@@ -16,6 +16,7 @@ export const Photo = () => {
 
     return(
         <div className="Photo">
+            <h2 className="Photo-h2">Nature</h2>
             <div className="Photo-grid">
                 {grid.map( ({ id , src , alt , big }) => 
                     <img className={`Photo-img ${ big }`} key={ id } src={ src } alt={ alt } loading="lazy" />

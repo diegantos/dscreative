@@ -2,11 +2,18 @@
 
 .Photo{
     margin: 10em auto 0;
+    &-h2{
+        font-size: 2.8em;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1em;
+    }
     &-grid{
         display: grid;
         grid-template-columns: repeat( 3, 1fr );
         gap: 1em;
-        padding: 1em;
+        // padding: 1em;
     }
 }
 
