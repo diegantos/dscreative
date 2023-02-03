@@ -1,5 +1,5 @@
 # Diegantos Creative
-![Imagen del proyecto](https://user-images.githubusercontent.com/118907489/204322209-21d44fa6-5166-4321-84e3-43b62a3c1cf9.png)
+![Imagen del proyecto](https://user-images.githubusercontent.com/118907489/216543274-52a895c0-70e6-452a-b369-78fc6801514f.png)
 
 <!-- ## Ejemplo en vivo -->
 <!-- - [Enlace directo Afterlife](https://effervescent-platypus-119fbc.netlify.app/) -->
@@ -25,8 +25,9 @@ He aprendido a utilizar componentes en React en la que he podido introducir unas
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://user-images.githubusercontent.com/118907489/216543274-52a895c0-70e6-452a-b369-78fc6801514f.png)
 ![Captura del proyecto](https://user-images.githubusercontent.com/118907489/216543279-b2b4405c-0342-480e-bc4f-71f95ec1c522.png)
+![Captura del proyecto](https://user-images.githubusercontent.com/118907489/216544070-424aff19-e033-4212-aed3-deeb87cc43da.png)
+
 
 ## Autor ✒️
 **DIEGO SANTOS**
