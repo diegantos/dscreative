@@ -1,8 +1,8 @@
 # Diegantos Creative
 ![Imagen del proyecto](https://user-images.githubusercontent.com/118907489/216543274-52a895c0-70e6-452a-b369-78fc6801514f.png)
 
-<!-- ## Ejemplo en vivo -->
-<!-- - [Enlace directo Afterlife](https://effervescent-platypus-119fbc.netlify.app/) -->
+## Ejemplo en vivo
+- [Enlace directo Afterlife](https://diegantoscreative.netlify.app/)
 <!-- - [URL-de-la-api](URL-de-la-api) -->
 
 ## Descripción 📑
