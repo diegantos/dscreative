@@ -11,7 +11,7 @@ export const Intro = () => {
             
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
-                    <BackgroundElement url='/assets/SOMIEDO/P1022369.jpg'></BackgroundElement>
+                    <BackgroundElement url='/assets/img/P1022369.jpg'></BackgroundElement>
                     <TextEffect 
                         parrafo='creative filmmaking / brand work'
                         titulo='videography'></TextEffect>
@@ -20,7 +20,7 @@ export const Intro = () => {
 
             <div className="Intro-works">
                 <a href="#" className="Intro-a">
-                    <BackgroundElement url='/assets/UBINAS/DJI_0027.jpg'></BackgroundElement>
+                    <BackgroundElement url='/assets/img/DJI_0027.jpg'></BackgroundElement>
                     <TextEffect 
                         parrafo='from nature to festivals'
                         titulo='photography'></TextEffect>
