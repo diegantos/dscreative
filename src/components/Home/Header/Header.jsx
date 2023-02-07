@@ -19,7 +19,7 @@ export const Header = () => {
     },[])
 
     return(
-        <div
+        <header
             className={`Header ${ show ? 'Active' : '' } ${ scrollTop ? 'Scrolled' : ''}`}>
 
             <div className="Header-wrapper Wrapper">
@@ -50,6 +50,6 @@ export const Header = () => {
                 </nav>
             </div>
 
-        </div>
+        </header>
     )
 }
