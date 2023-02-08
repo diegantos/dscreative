@@ -23,7 +23,7 @@ export const Header = () => {
             className={`Header ${ show ? 'Active' : '' } ${ scrollTop ? 'Scrolled' : ''}`}>
 
             <div className="Header-wrapper Wrapper">
-                <a href="#" className="Header-logo">
+                <a href="/" className="Header-logo">
                     <img src="/assets/DSWhite.png" alt="Logo" className="Header-img" />
                 </a>
 
@@ -38,13 +38,13 @@ export const Header = () => {
                 <nav className="Header-nav">
                     <ul className="Header-ul">
                         <li className="Header-li">
-                            <a href="#" className="Header-a">photograhpy</a>
+                            <a href="/photography" className="Header-a">photograhpy</a>
                         </li>
                         <li className="Header-li">
-                            <a href="#" className="Header-a">video</a>
+                            <a href="/video" className="Header-a">video</a>
                         </li>
                         <li className="Header-li">
-                            <a href="#" className="Header-a">contact</a>
+                            <a href="/contact" className="Header-a">contact</a>
                         </li>
                     </ul>
                 </nav>
