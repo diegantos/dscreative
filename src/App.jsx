@@ -10,10 +10,6 @@ function App() {
 
     <div className="App">
 
-      {/* <Home /> */}
-      {/* <Contact /> */}
-      {/* <Photography /> */}
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
