@@ -19,6 +19,9 @@ export const About = () => {
                 <a href="mailto:info@diegantos.com?subject=Hello%20there!" className="About-mail">info@diegantos.com</a>
             </div>
 
+            {/* <div className="Grid">
+                
+            </div> */}
         </div>
         </>
     )
