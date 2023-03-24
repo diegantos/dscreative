@@ -3,7 +3,7 @@ import { Contact } from './components/Contact/Contact'
 import { Home } from './components/Home/Home'
 import { Photography } from './components/Photography/Photography'
 import { Videography } from './components/Videography/Videography'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 function App() {
 
