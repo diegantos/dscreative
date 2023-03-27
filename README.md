@@ -35,9 +35,6 @@ Si quieres hechar un vistazo al proyecto, te recomiendo:
 * [info@diegantos.com](mailto:info@diegantos.com?subject=Hello!)
 * [LinkedIn](https://www.linkedin.com/in/diegantos/)
 * [Porfolio web](https://diegantos.com)
-
-## Instalación 
-Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
   
 ## Licencia 📄
 MIT Public License v3.0
