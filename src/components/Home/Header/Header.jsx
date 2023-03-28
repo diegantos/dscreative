@@ -39,6 +39,9 @@ export const Header = () => {
                 <nav className="Header-nav">
                     <ul className="Header-ul">
                         <li className="Header-li">
+                            <NavLink to='/' className='Header-a'>home</NavLink>
+                        </li>
+                        <li className="Header-li">
                             <NavLink to='/photography' className='Header-a'>photograhpy</NavLink>
                         </li>
                         <li className="Header-li">
