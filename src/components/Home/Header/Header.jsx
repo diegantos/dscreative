@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import './Header.scss'
 
 export const Header = () => {
@@ -23,9 +24,9 @@ export const Header = () => {
             className={`Header ${ show ? 'Active' : '' } ${ scrollTop ? 'Scrolled' : ''}`}>
 
             <div className="Header-wrapper Wrapper">
-                <a href="/" className="Header-logo">
+                <NavLink to='/' className='Header-logo'>
                     <img src="/assets/DSWhite.png" alt="Logo" className="Header-img" />
-                </a>
+                </NavLink>
 
                 <button 
                     onClick={ ()=> setShow(!show) }
@@ -38,13 +39,13 @@ export const Header = () => {
                 <nav className="Header-nav">
                     <ul className="Header-ul">
                         <li className="Header-li">
-                            <a href="/photography" className="Header-a">photograhpy</a>
+                            <NavLink to='/photography' className='Header-a'>photograhpy</NavLink>
                         </li>
                         <li className="Header-li">
-                            <a href="/video" className="Header-a">video</a>
+                            <NavLink to='/video' className='Header-a'>video</NavLink>
                         </li>
                         <li className="Header-li">
-                            <a href="/contact" className="Header-a">contact</a>
+                            <NavLink to='/contact'>contact</NavLink>
                         </li>
                     </ul>
                 </nav>
