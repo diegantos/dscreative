@@ -7,7 +7,7 @@ export const Intro = () => {
         <div className="Intro">
             <div className="Intro-vid">
                 <video className="Intro-video" autoPlay muted loop src="/assets/Intro.mp4"></video>
-                <Btn url='https://diegantos.com' clase='Intro-btn'>Play Showreel</Btn>
+                <Btn url='https://vimeo.com/812354875' clase='Intro-btn'>Play Showreel</Btn>
             </div>
             
             <div className="Intro-works">
