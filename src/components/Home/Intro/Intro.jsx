@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { BackgroundElement, Btn, TextEffect } from '../../Common/Common'
 import './Intro.scss'
 
@@ -10,21 +11,21 @@ export const Intro = () => {
             </div>
             
             <div className="Intro-works">
-                <a href="/video" className="Intro-a">
+                <NavLink to='/video' className='Intro-a'>
                     <BackgroundElement url='/assets/img/P1022369.jpg'></BackgroundElement>
                     <TextEffect 
                         parrafo='creative filmmaking / brand work'
                         titulo='videography'></TextEffect>
-                </a>
+                </NavLink>
             </div>
 
             <div className="Intro-works">
-                <a href="/photography" className="Intro-a">
+                <NavLink to='/photography' className='Intro-a'>
                     <BackgroundElement url='/assets/img/DJI_0027.jpg'></BackgroundElement>
                     <TextEffect 
                         parrafo='from nature to festivals'
                         titulo='photography'></TextEffect>
-                </a>
+                </NavLink>
             </div>
         </div>
         
