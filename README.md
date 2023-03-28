@@ -7,11 +7,11 @@
 
 ## Descripción 📑
 
-En este proyecto me he introducido en mi primera prueba realizando una web con React
+He realizado mi propio portfolio audiovisual en React
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻 
 
-He aprendido a utilizar componentes en React en la que he podido introducir unas tabs para la práctica de clicks
+He aprendido a utilizar Router, Link y NavLink
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
