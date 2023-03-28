@@ -3,9 +3,10 @@
 .Video{
     min-height: 100vh;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
-    font-size: 4.6em;
+    font-size: 3.6em;
+    text-align: center;
 }
