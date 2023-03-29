@@ -4,7 +4,7 @@ import './Video.scss'
 
 export const Video = () => {
 
-    const VideoPlayer = useRef(null)
+    const videoPlayer = useRef(null)
     const [scrollTop, setScrollTop] = useState('')
 
     // const handleScroll = ( element ) => {
@@ -18,9 +18,9 @@ export const Video = () => {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             let pixel = window.scrollY
-            VideoPlayer.currentTime = pixel / 1000
+            videoPlayer.currentTime = pixel / 1000
             console.log(pixel)
-            console.log(VideoPlayer.currentTime)
+            console.log(videoPlayer.currentTime)
         })
         // return () => {
         //     window.removeEventListener('scroll', handleScroll)
@@ -31,7 +31,7 @@ export const Video = () => {
         <div className="Video">
             <div className="Video-vid">
                 <video
-                    ref={VideoPlayer} 
+                    ref={videoPlayer} 
                     className="Video-video" muted controls src="/assets/Videography.mp4"></video>
                 <Btn url='#' clase='Video-btn'>Click to continue</Btn>
             </div>
