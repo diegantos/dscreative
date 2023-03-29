@@ -4,37 +4,32 @@ import './Video.scss'
 
 export const Video = () => {
 
-    const videoPlayer = useRef(null)
-    const [playing, setPlaying] = useState(false)
-    const [scrollTop, setScrollTop] = useState('')
+    const videoRef = useRef(null)
 
-    const handleScroll = ( element ) => {
-        let pixel = window.scrollY
-        console.log(pixel)
-        console.log(VideoPlayer)
-        videoPlayer.currentTime = pixel / 1000
+    const handleScroll = () => {
+        const video = videoRef.current
+        const scrollPosition = window.scrollY
+
+        // if( scrollPosition > 0 && scrollPosition < 2000){
+            video.currentTime = scrollPosition / 300
+        // }
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-            let pixel = window.scrollY
-            if( pixel > 100 && pixel < 1000 ){
-                videoPlayer.currentTime = pixel / 1000
-                console.log(pixel)
-                console.log(videoPlayer.currentTime)
-            }
+        window.addEventListener('scroll', handleScroll)
+        return(() => {
+            window.removeEventListener('scroll', handleScroll)
         })
-    })
+    },[])
 
     return(
         <div className="Video">
-            <div className="Video-vid" onChange={handleScroll}>
+            <div className="Video-vid">
                 <video
-                    // ref={videoPlayer} 
+                    ref={videoRef}
                     className="Video-video" 
                     muted 
-                    controls 
-                    autoPlay={playing}
+                    // controls 
                     src="/assets/Videography.mp4"></video>
                 <Btn url='#' clase='Video-btn'>Click to continue</Btn>
             </div>

@@ -3,13 +3,14 @@
 .Video{
     min-height: 300vh;
     &-vid{
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 0;
     }
     &-video{
-        min-height: 90vh;
-        // margin: 9em 0;
+        // min-height: 90vh;
+        // padding: 11em 0;
+        min-height: 100vh;
     }
     &-btn{
         position: absolute;
