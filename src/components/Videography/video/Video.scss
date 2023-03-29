@@ -8,13 +8,22 @@
         left: 0;
     }
     &-video{
-        // min-height: 90vh;
-        // padding: 11em 0;
-        min-height: 100vh;
+        min-height: 90vh;
+        // padding: 9em 0;
+        // min-height: 100vh;
     }
     &-btn{
         position: absolute;
         top: calc( 50% - 22.5px );
         left: calc( 50% - 100px );
+    }
+    &.Scrolled{
+        position: relative;
+    }
+    &-h2{
+        position: fixed;
+        top: 90vh;
+        left: 0;
+        min-height: 100vh;
     }
 }
