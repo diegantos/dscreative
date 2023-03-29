@@ -1,12 +1,19 @@
 @import '../../../partials/variables';
 
 .Video{
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 3.6em;
-    text-align: center;
+    min-height: 300vh;
+    &-vid{
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    &-video{
+        min-height: 90vh;
+        // margin: 9em 0;
+    }
+    &-btn{
+        position: absolute;
+        top: calc( 50% - 22.5px );
+        left: calc( 50% - 100px );
+    }
 }
