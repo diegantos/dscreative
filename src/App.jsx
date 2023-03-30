@@ -5,6 +5,7 @@ import { Photography } from './components/Photography/Photography'
 import { Videography } from './components/Videography/Videography'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { NotFound } from './components/PageNotFound/NotFound'
+import { ScrollToTop } from './components/ScrollToTop/ScrollToTop'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
 
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route index element={<Home />} />
           <Route path='contact' element={<Contact />} />
