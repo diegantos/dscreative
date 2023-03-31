@@ -7,7 +7,7 @@ export const Btn = ({ children, clase, url }) => {
             target='_blank'
             className={`Btn ${ clase }`}
             title='Play Showreel'>
-            <span className='Btn-span'>{ children }</span>    
+            <span className='Btn-span'>{ children }</span>
         </a>
     )
 }

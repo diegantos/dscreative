@@ -38,12 +38,15 @@ export const Video = () => {
                     src="/assets/Videography.mp4"></video>
                 <Btn clase='Video-btn'>Scroll smoothly to see</Btn>
             </div>
+            
             <video 
+                // onClick={ muted = !muted }
                 className='Video-video2'
                 autoPlay 
                 muted 
                 loop 
                 src="/assets/Videography3.mp4"></video>
+                
             <video 
                 className='Video-video3'
                 autoPlay 
