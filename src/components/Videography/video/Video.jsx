@@ -52,7 +52,7 @@ export const Video = () => {
                 autoPlay 
                 muted 
                 loop 
-                src="/assets/Videography2.mp4"></video>
+                src="/assets/Videography4.mp4"></video>
         </div>
     )
 }
