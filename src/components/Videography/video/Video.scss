@@ -1,25 +1,23 @@
 @import '../../../partials/variables';
 
 .Video{
-    min-height: 350vh;
+    min-height: 385vh;
     &-vid{
         position: fixed;
         top: 0;
         left: 0;
-        transition: all 3s ease;
+        transition: all 1.2s ease;
         &.Scrolled{
             transform: translateY(-1000px);
         }
     }
     &-video{
         min-height: 90vh;
-        // padding: 9em 0;
-        // min-height: 100vh;
     }
     &-btn{
         position: absolute;
         top: calc( 50% - 22.5px );
-        left: calc( 50% - 100px );
+        left: calc( 50% - 144px );
     }
     &-h2{
         position: relative;
@@ -27,5 +25,35 @@
         left: 0;
         text-align: center;
         font-size: 3.6em;
+    }
+    &-video2{
+        position: relative;
+        top: 210vh;
+        left: 0;
+        width: 90%;
+        max-height: 80vh;
+        margin: auto;
+        border-radius: 15px;
+    }
+    &-video3{
+        position: relative;
+        top: 220vh;
+        left: 0;
+        width: 90%;
+        max-height: 80vh;
+        margin: auto;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Video{
+        min-height: 290vh;
+        &-vid{
+            z-index: -1;
+        }
+        &-video2{
+
+        }
     }
 }

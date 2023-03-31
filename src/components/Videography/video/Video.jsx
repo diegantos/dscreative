@@ -13,7 +13,7 @@ export const Video = () => {
 
         video.currentTime = scrollPosition / 300;
 
-        if( scrollPosition > 1300){
+        if( scrollPosition > 1700){
             setScrollTop(true)
         }else{
             setScrollTop(false)
@@ -36,10 +36,20 @@ export const Video = () => {
                     muted 
                     // controls 
                     src="/assets/Videography.mp4"></video>
-                <Btn clase='Video-btn'>Scroll to see</Btn>
+                <Btn clase='Video-btn'>Scroll smoothly to see</Btn>
             </div>
-            <h2 className='Video-h2'>Work in progress</h2>
-            <h2 className='Video-h2'>Please check out my social media for more</h2>
+            <video 
+                className='Video-video2'
+                autoPlay 
+                muted 
+                loop 
+                src="/assets/Videography3.mp4"></video>
+            <video 
+                className='Video-video3'
+                autoPlay 
+                muted 
+                loop 
+                src="/assets/Videography2.mp4"></video>
         </div>
     )
 }
