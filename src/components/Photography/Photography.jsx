@@ -1,13 +1,29 @@
-import { Footer } from '../Home/Footer/Footer';
-import { Header } from '../Home/Header/Header';
-import { Photo } from './Photo/Photo';
+import { useEffect, useState } from "react";
+import { Footer } from "../Home/Footer/Footer";
+import { Header } from "../Home/Header/Header";
+import { Photo } from "./Photo/Photo";
+import { Spinner } from "../Spinner/Spinner";
 
 export const Photography = () => {
-    return(
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
+  return (
+    <>
+      {loading ? (
+        <Spinner />
+      ) : (
         <>
-            <Header />
-            <Photo />
-            <Footer />
+          <Header />
+          <Photo />
+          <Footer />
         </>
-    )
-}
+      )}
+    </>
+  );
+};
