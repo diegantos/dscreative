@@ -53,7 +53,7 @@ export const Photo = () => {
             <h2 className="Photo-h2">Festival</h2>
             <div className="Photo-grid">
                 {festGrid.map( ({ id , src , alt , size}) =>
-                    <img  className={`Photo-img ${ size }`} key={ id } src={ src } alt={ alt } />
+                    <img  className={`Photo-img ${ size }`} key={ id } src={ src } alt={ alt } loading='lazy' />
                 )}
             </div>
         </div>

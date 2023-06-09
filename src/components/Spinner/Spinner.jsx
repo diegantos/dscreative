@@ -5,7 +5,7 @@ export const Spinner = () => {
     return (
       <div className="Spinner">
         <PuffLoader
-          size={250}
+          size={200}
           color="#00a7ac"
           speedMultiplier={2.5}
           className="Spinner-loader"
