@@ -9,19 +9,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &-loader{
+        position: relative;
+    }
     &-img{
+        position: absolute;
+        top: calc( 50% - 3em );
+        left: calc( 50% - 3em );
         max-width: 6em;
-        animation: rotate 2.5s linear infinite;
+        animation: rotate 3.5s linear infinite;
     }
 }
 @keyframes rotate {
     0%{
-        transform: rotate(0deg);
+        transform: rotate(-90deg);
     }
     50%{
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
     100%{
-        transform: rotate(360deg);
+        transform: rotate(270deg);
     }
 }
